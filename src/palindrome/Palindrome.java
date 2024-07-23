@@ -2,13 +2,15 @@ package palindrome;
 
 public class Palindrome {
     public static void main(String[] args) {
-        Integer number = 121;
+        Integer number = 222;
         System.out.println("Number: " + number);
-        System.out.println("Is palindrome? = " + isPalindrome(number));
+        System.out.println("Is palindrome? - " + isPalindrome(number));
 
-        String string = "Hector";
+        System.out.println("------");
+
+        String string = "Anna";
         System.out.println("A word: '" + string + "'");
-        System.out.println("Is palindrome? = " + isPalindrome(string));
+        System.out.println("Is palindrome? - " + isPalindrome(string));
     }
 
     public static boolean isPalindrome(Integer number) {
@@ -19,6 +21,6 @@ public class Palindrome {
 
     public static boolean isPalindrome(String string) {
         String reversed = new StringBuilder(string).reverse().toString();
-        return string.equals(reversed);
+        return string.equalsIgnoreCase(reversed);
     }
 }
