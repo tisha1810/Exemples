@@ -14,8 +14,7 @@ public class SumTwo {
         System.out.println("Input target:");
         int target = scanner.nextInt();
 
-        int[] arr = new int[2];
-        arr = sumTwo(array, target);
+        int[] arr = sumTwo(array, target);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -28,7 +27,7 @@ public class SumTwo {
     public static int[] sumTwo(int[] array, int target) {
         int firstIndex = 0;
         int secondIndex = 0;
-        int sum = 0;
+        int sum;
         for (int i = 0; i < array.length; i++) {
             firstIndex = i;
             secondIndex = i + 1;
