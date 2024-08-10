@@ -25,7 +25,7 @@ public class StringArray {
 
     public String get(int index) {
         if (index >= size || index < 0) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+            throw new IndexOutOfBoundsException("Invalid index");
         }
         return array[index];
     }
