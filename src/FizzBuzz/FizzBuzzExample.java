@@ -17,7 +17,7 @@ public class FizzBuzzExample {
     public static void fizzBuzzCheck(short[] array) {
         for (short value : array) {
             if (value % 3 == 0 & value % 5 == 0) {
-                System.out.println("FizzBuzz");
+                System.out.println("Fizz&Buzz");
             } else if (value % 5 == 0) {
                 System.out.println("Buzz");
             } else if (value % 3 == 0) {
