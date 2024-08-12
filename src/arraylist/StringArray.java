@@ -5,20 +5,19 @@ public class StringArray {
     private int size;
 
     public StringArray() {
-        array = new String[2];
-        size = 0;
+        array = new String[1];
     }
 
-    public void add(String value) {
+    public void add(String element) {
         if (size == array.length) {
             increaseArray();
         }
-        array[size] = value;
+        array[size] = element;
         size++;
     }
 
     private void increaseArray() {
-        String[] newArray = new String[array.length * 2];
+        String[] newArray = new String[array.length + 1];
         System.arraycopy(array, 0, newArray, 0, array.length);
         array = newArray;
     }
