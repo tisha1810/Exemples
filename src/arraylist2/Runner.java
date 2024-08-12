@@ -12,5 +12,13 @@ public class Runner {
             System.out.print(s + " ");
         }
         System.out.println("]");
+
+        stringCollection.remove("Boris");
+
+        System.out.print("[ ");
+        for (String s : stringCollection) {
+            System.out.print(s + " ");
+        }
+        System.out.println("]");
     }
 }
