@@ -8,7 +8,7 @@ public class StringCollection implements Collection<String> {
     private String[] elements;
     private int size;
 
-    private static final int DEFAULT_CAPACITY = 10;
+    private static final int DEFAULT_CAPACITY = 1;
 
     public StringCollection() {
         elements = new String[DEFAULT_CAPACITY];
@@ -16,7 +16,7 @@ public class StringCollection implements Collection<String> {
 
     private void ensureCapacity(int minCapacity) {
         if (minCapacity > elements.length) {
-            int newCapacity = Math.max(elements.length * 2, minCapacity);
+            int newCapacity = Math.max(elements.length + 1, minCapacity);
             String[] newElements = new String[newCapacity];
             System.arraycopy(elements, 0, newElements, 0, size);
             elements = newElements;
@@ -146,7 +146,7 @@ public class StringCollection implements Collection<String> {
         for (int i = 0; i < size; i++) {
             if (!c.contains(elements[i])) {
                 remove(elements[i]);
-                i--; 
+                i--;
                 modified = true;
             }
         }
