@@ -1,4 +1,4 @@
-package arraylist2;
+package arraylist;
 
 public class Runner {
     public static void main(String[] args) {
