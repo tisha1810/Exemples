@@ -6,6 +6,7 @@ public class ArrayExample {
         print(array);
         sortChanger(array);
         print(array);
+
     }
 
     public static void print(Integer[] array) {
