@@ -1,4 +1,4 @@
-package collections.taskemployee;
+package collections.employeetask;
 
 public class Employee {
     private final String name;
