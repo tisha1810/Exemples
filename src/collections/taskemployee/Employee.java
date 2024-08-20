@@ -1,8 +1,6 @@
 package collections.taskemployee;
 
-import java.util.ArrayList;
-
-public class Employee extends ArrayList {
+public class Employee {
     private final String name;
 
     public Integer getAge() {
