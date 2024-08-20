@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Reverse {
     public static void main(String[] args) {
-        String string = "Hello World";
+        String string = "Boris and Doris";
         String[] strings = string.split(" ");
 
         System.out.println(string);
