@@ -1,7 +1,6 @@
 package collections.taskemployee;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class EmployeeDemo {
@@ -20,7 +19,7 @@ public class EmployeeDemo {
         System.out.println("----- Unsorted List -----");
         System.out.println(employees);
 
-        Collections.sort(employees, Comparator.comparingInt(Employee::getAge));
+        employees.sort(Comparator.comparingInt(Employee::getAge));
 
         System.out.println("----- Sorted list -----");
         System.out.println(employees);
