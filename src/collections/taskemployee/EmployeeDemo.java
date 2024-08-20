@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class CollectionDemo {
+public class EmployeeDemo {
     public static void main(String[] args) {
         Employee firstEmployee = new Employee("Boris", 45);
         Employee secondEmployee = new Employee("Doris", 29);
