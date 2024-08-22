@@ -9,8 +9,6 @@ public class DeleteExample {
 
         String stringNumbers = scanner.nextLine();
 
-        System.out.println(stringNumbers);
-
         String[] numbers = generateStringArray(stringNumbers);
         Integer[] integers = generateIntegerArray(numbers);
 
