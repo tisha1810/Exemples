@@ -9,10 +9,13 @@ public class DeleteExampleTwo {
     public static void main(String[] args) {
         int size = ThreadLocalRandom.current().nextInt(10, 15);
         Integer[] integers = generateArray(size);
-        printer(integers);
+
+        System.out.println("--- Random list ---");
 
         ArrayList<Integer> integerArrayList = integerArrayListCreate(integers);
         System.out.println(integerArrayList);
+
+        System.out.println("--- Remove number ---");
 
         numberRemover(integerArrayList);
         System.out.println(integerArrayList);
@@ -25,13 +28,6 @@ public class DeleteExampleTwo {
             integers[i] = ThreadLocalRandom.current().nextInt(1, 50);
         }
         return integers;
-    }
-
-    public static void printer(Integer[] integers) {
-        for (Integer integer : integers) {
-            System.out.print(integer + " ");
-        }
-        System.out.println();
     }
 
     public static ArrayList<Integer> integerArrayListCreate(Integer[] integers) {
