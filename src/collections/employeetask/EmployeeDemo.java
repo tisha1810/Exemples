@@ -9,13 +9,13 @@ public class EmployeeDemo {
         Employee secondEmployee = new Employee("Doris", 29);
         Employee thirdEmployee = new Employee("Noris", 22);
         Employee fourEmployee = new Employee("Storis", 31);
-
+        Employee fifthEmployee = new Employee("Loris", 23);
         ArrayList<Employee> employees = new ArrayList<>();
         employees.add(firstEmployee);
         employees.add(secondEmployee);
         employees.add(thirdEmployee);
         employees.add(fourEmployee);
-
+        employees.add(fifthEmployee);
         System.out.println("----- Unsorted List -----");
         System.out.println(employees);
 
