@@ -39,7 +39,7 @@ public class DeleteExample {
         return integerArrayList;
     }
 
-    public static ArrayList<Integer> numberRemover(ArrayList<Integer> integerArrayList) {
+    public static void numberRemover(ArrayList<Integer> integerArrayList) {
         ListIterator<Integer> integerListIterator = integerArrayList.listIterator();
         while (integerListIterator.hasNext()) {
             Integer num = integerListIterator.next();
@@ -47,6 +47,5 @@ public class DeleteExample {
                 integerListIterator.remove();
             }
         }
-        return integerArrayList;
     }
 }
