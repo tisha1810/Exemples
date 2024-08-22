@@ -1,39 +1,40 @@
 package collections.deletetask;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.ListIterator;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class DeleteExample {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Input number:");
 
-        String stringNumbers = scanner.nextLine();
+    private final Integer[] integers = generateArray();
+    private final ArrayList<Integer> integerArrayList = integerArrayListCreate(integers);
 
-        String[] numbers = generateStringArray(stringNumbers);
-        Integer[] integers = generateIntegerArray(numbers);
-
-        ArrayList<Integer> integerArrayList = integerArrayListCreate(integers);
-        System.out.println(integerArrayList);
-
-        numberRemover(integerArrayList);
-        System.out.println(integerArrayList);
+    public ArrayList<Integer> getIntegerArrayList() {
+        return integerArrayList;
     }
 
-    public static String[] generateStringArray(String stringNumbers) {
-        return stringNumbers.split(" ");
+    public Integer[] getIntegers() {
+        return integers;
     }
 
-    public static Integer[] generateIntegerArray(String[] numbers) {
-        return Arrays.stream(numbers).map(Integer::valueOf).toArray(Integer[]::new);
+    public Integer[] generateArray() {
+        int size = ThreadLocalRandom.current().nextInt(10, 15);
+        Integer[] integers = new Integer[size];
+        for (int i = 0; i < integers.length; i++) {
+            integers[i] = ThreadLocalRandom.current().nextInt(1, 50);
+        }
+        return integers;
     }
 
-    public static ArrayList<Integer> integerArrayListCreate(Integer[] integers) {
+    public ArrayList<Integer> integerArrayListCreate(Integer[] integers) {
         ArrayList<Integer> integerArrayList = new ArrayList<>();
         Collections.addAll(integerArrayList, integers);
         return integerArrayList;
     }
 
-    public static void numberRemover(ArrayList<Integer> integerArrayList) {
+    public ArrayList<Integer> numberRemover(ArrayList<Integer> integerArrayList) {
         ListIterator<Integer> integerListIterator = integerArrayList.listIterator();
         while (integerListIterator.hasNext()) {
             Integer num = integerListIterator.next();
@@ -41,5 +42,12 @@ public class DeleteExample {
                 integerListIterator.remove();
             }
         }
+        return integerArrayList;
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(integers);
     }
 }
+
