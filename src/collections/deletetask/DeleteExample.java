@@ -1,9 +1,6 @@
 package collections.deletetask;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.ListIterator;
-import java.util.Scanner;
+import java.util.*;
 
 public class DeleteExample {
     public static void main(String[] args) {
@@ -11,6 +8,8 @@ public class DeleteExample {
         System.out.println("Input number:");
 
         String stringNumbers = scanner.nextLine();
+
+        System.out.println(stringNumbers);
 
         String[] numbers = generateStringArray(stringNumbers);
         Integer[] integers = generateIntegerArray(numbers);
@@ -23,19 +22,16 @@ public class DeleteExample {
     }
 
     public static String[] generateStringArray(String stringNumbers) {
-        return stringNumbers.split(", ");
+        return stringNumbers.split(" ");
     }
 
     public static Integer[] generateIntegerArray(String[] numbers) {
-        Integer[] integers = Arrays.stream(numbers).map(Integer::valueOf).toArray(Integer[]::new);
-        return integers;
+        return Arrays.stream(numbers).map(Integer::valueOf).toArray(Integer[]::new);
     }
 
     public static ArrayList<Integer> integerArrayListCreate(Integer[] integers) {
         ArrayList<Integer> integerArrayList = new ArrayList<>();
-        for (Integer integer : integers) {
-            integerArrayList.add(integer);
-        }
+        Collections.addAll(integerArrayList, integers);
         return integerArrayList;
     }
 
