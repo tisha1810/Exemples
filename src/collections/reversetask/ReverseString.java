@@ -1,13 +1,18 @@
 package collections.reversetask;
 
+import java.util.Scanner;
 import java.util.Stack;
 
-public class Reverse {
+public class ReverseString {
     public static void main(String[] args) {
-        String string = "Boris and Doris";
-        String[] strings = string.split(" ");
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Input string:");
+
+        String string = scanner.nextLine();
+        System.out.println("--- String ---");
         System.out.println(string);
+        String[] strings = string.split(" ");
 
         Stack<String> stringStack = new Stack<>();
         for (String str : strings) {
@@ -15,10 +20,10 @@ public class Reverse {
         }
 
         StringBuilder stringBuilder = new StringBuilder();
-
         while(!stringStack.isEmpty()){
             stringBuilder.append(stringStack.pop()).append(" ");
         }
+        System.out.println("--- Reversed ---");
         System.out.println(stringBuilder);
     }
 }
