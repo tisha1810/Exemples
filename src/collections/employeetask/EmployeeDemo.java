@@ -5,17 +5,19 @@ import java.util.Comparator;
 
 public class EmployeeDemo {
     public static void main(String[] args) {
-        Employee firstEmployee = new Employee("Boris", 45);
-        Employee secondEmployee = new Employee("Doris", 29);
-        Employee thirdEmployee = new Employee("Noris", 22);
-        Employee fourEmployee = new Employee("Storis", 31);
-        Employee fifthEmployee = new Employee("Loris", 23);
+        Employee firstEmployee = new Employee("Boris");
+        Employee secondEmployee = new Employee("Doris");
+        Employee thirdEmployee = new Employee("Noris");
+        Employee fourEmployee = new Employee("Storis");
+        Employee fifthEmployee = new Employee("Loris");
+
         ArrayList<Employee> employees = new ArrayList<>();
         employees.add(firstEmployee);
         employees.add(secondEmployee);
         employees.add(thirdEmployee);
         employees.add(fourEmployee);
         employees.add(fifthEmployee);
+
         System.out.println("----- Unsorted List -----");
         System.out.println(employees);
 

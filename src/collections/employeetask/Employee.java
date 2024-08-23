@@ -1,17 +1,17 @@
 package collections.employeetask;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public class Employee {
     private final String name;
+    private final Integer age = ThreadLocalRandom.current().nextInt(18, 50);
 
     public Integer getAge() {
         return age;
     }
 
-    private final Integer age;
-
-    public Employee(String name, Integer age) {
+    public Employee(String name) {
         this.name = name;
-        this.age = age;
     }
 
     @Override
