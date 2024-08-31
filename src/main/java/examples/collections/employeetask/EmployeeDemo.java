@@ -1,4 +1,4 @@
-package collections.employeetask;
+package examples.collections.employeetask;
 
 import java.util.ArrayList;
 import java.util.Comparator;

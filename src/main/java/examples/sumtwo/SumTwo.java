@@ -1,4 +1,4 @@
-package sumtwo;
+package examples.sumtwo;
 
 import java.util.Arrays;
 import java.util.Scanner;

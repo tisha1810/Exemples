@@ -1,4 +1,4 @@
-package collections.reversetask;
+package examples.collections.reversetask;
 
 import java.util.Scanner;
 import java.util.Stack;

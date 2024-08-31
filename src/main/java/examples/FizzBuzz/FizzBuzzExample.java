@@ -1,4 +1,4 @@
-package FizzBuzz;
+package examples.FizzBuzz;
 
 public class FizzBuzzExample {
     public static void main(String[] args) {

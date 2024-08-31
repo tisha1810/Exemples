@@ -1,4 +1,4 @@
-package collections.deletetask;
+package examples.collections.deletetask;
 
 import java.util.ArrayList;
 import java.util.Arrays;

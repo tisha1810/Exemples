@@ -1,4 +1,4 @@
-package multithread;
+package examples.multithread;
 
 
 import java.util.Scanner;

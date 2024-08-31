@@ -1,4 +1,4 @@
-package collections.deletetask;
+package examples.collections.deletetask;
 
 public class DeleteRunner {
     public static void main(String[] args) {

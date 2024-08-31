@@ -1,4 +1,4 @@
-package collections.rotationtask;
+package examples.collections.rotationtask;
 
 import java.util.LinkedList;
 import java.util.Scanner;
