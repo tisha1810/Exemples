@@ -15,8 +15,6 @@ public class Runner {
                 new Person("Moris", "male", 29),
                 new Person("Loris", "female", 23));
         personList.forEach(System.out::println);
-
-        personList.forEach(System.out::println);
         ObjectMapper objectMapper = new ObjectMapper();
         String persons = objectMapper.writeValueAsString(personList);
         System.out.println(persons);
@@ -24,6 +22,5 @@ public class Runner {
         personData.write(persons);
         personData.flush();
         personData.close();
-
     }
 }
